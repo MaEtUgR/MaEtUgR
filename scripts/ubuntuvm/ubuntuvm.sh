@@ -5,7 +5,7 @@ sudo sed -i '/%sudo\tALL=(ALL:ALL) ALL/c\%sudo\tALL=(ALL:ALL) NOPASSWD:ALL' /etc
 
 # install all basic packages
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
 sudo apt install htop open-vm-tools open-vm-tools-desktop gnome-core gnome-tweak-tool gnome-shell-extension-dash-to-panel git imwheel -y
 #sudo apt purge firefox -y
 
