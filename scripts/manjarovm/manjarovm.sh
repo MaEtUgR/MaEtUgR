@@ -1,15 +1,5 @@
 #!/bin/bash
 
-sudo pacman -Syu \
-	htop \
-	imwheel \
-	chromium \
-	tk aspell-en \
-	gnome-shell-extension-desktop-icons \
-	;
-
-sudo pacman -R firefox
-
 # configure gnome
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.5 # scale everything
 gsettings set org.gnome.desktop.interface enable-animations false # disable animations
@@ -25,6 +15,16 @@ gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 # desktop icons
 #gnome-shell-extension-tool -e desktop-icons@csoriano
+
+sudo pacman -Syu --noconfirm --needed \
+	chromium \
+	code \
+	htop \
+	imwheel \
+	tk aspell-en \
+	;
+
+sudo pacman -R firefox
 
 # fix mouse wheel scrolling
 cat <<EOF | install -D /dev/stdin ~/.config/autostart/imwheel.desktop
