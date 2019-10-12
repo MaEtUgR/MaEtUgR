@@ -6,6 +6,7 @@ gsettings set org.gnome.desktop.interface enable-animations false # disable anim
 # dash-to-dock
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM # bottom bar
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64 # big bar
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false # remove trash
 # stand-by settings
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
