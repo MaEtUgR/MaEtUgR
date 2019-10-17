@@ -15,7 +15,7 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'no
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 # desktop icons
-#gnome-shell-extension-tool -e desktop-icons@csoriano
+gnome-extensions enable desktop-icons@csoriano
 
 sudo pacman -Syu --noconfirm --needed \
 	chromium \
