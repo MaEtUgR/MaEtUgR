@@ -14,6 +14,8 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'no
 #gsettings set org.gnome.desktop.interface clock-show-weekday false
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
+#gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.interface enable-hot-corners false
 # desktop icons
 gnome-extensions enable desktop-icons@csoriano
 
