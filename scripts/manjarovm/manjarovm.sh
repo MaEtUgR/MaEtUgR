@@ -8,6 +8,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM # bot
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64 # big bar
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false # remove trash
 gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true # app launcher first
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed true # don't autohide
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height true # extend to screen edge
 # stand-by settings
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
