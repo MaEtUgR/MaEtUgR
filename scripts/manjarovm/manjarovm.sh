@@ -31,6 +31,7 @@ sudo pacman -Syu --noconfirm --needed \
 	htop \
 	imwheel \
 	tk aspell-en \
+	seahorse \
 	;
 
 sudo pacman -R firefox
