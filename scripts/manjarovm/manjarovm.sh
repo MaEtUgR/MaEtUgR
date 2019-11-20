@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# disable password prompt for sudo
+su -c 'echo "$USER ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/10-$USER'
+
 # configure gnome
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.3 # scale everything
 gsettings set org.gnome.desktop.interface enable-animations false # disable animations
