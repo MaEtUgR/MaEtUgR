@@ -28,12 +28,8 @@ gnome-extensions enable desktop-icons@csoriano
 #gsettings set org.gnome.desktop.interface show-battery-percentage true
 #gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
 
-sudo pacman -Syu --noconfirm --needed \
-	chromium \
-	code \
-	htop \
+sudo pacman -S --noconfirm --needed \
 	imwheel \
-	tk aspell-en \
 	seahorse \
 	;
 
