@@ -18,10 +18,9 @@ sudo pacman -Syu --noconfirm --needed \
 #         Option "NaturalScrolling" "True"
 # EndSection
 
-sudo pacman -S telegram-desktop
 yay -S slack-desktop
 
-# switch real time clock to local time zone
-sudo timedatectl set-local-rtc 1
 # fetch correct time
 sudo ntpdate ntp.metas.ch
+# switch real time clock to local time zone
+sudo timedatectl set-local-rtc 1
