@@ -7,6 +7,7 @@ sudo pacman -Syu --noconfirm --needed \
 	seahorse \
 	telegram-desktop \
 	xclip \
+	yay \
 	;
 
 # /usr/share/X11/xorg.conf.d/40-libinput.conf
