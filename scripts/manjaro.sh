@@ -1,5 +1,6 @@
 
 sudo pacman -Syu --noconfirm --needed \
+	bash-completion \
 	chromium \
 	code \
 	htop \
