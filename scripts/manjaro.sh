@@ -11,6 +11,10 @@ sudo pacman -Syu --noconfirm --needed \
 	yay \
 	;
 
+yay -S slack-desktop spotify --noconfirm
+
+sudo pacman -R firefox palemoon-bin
+
 # /usr/share/X11/xorg.conf.d/40-libinput.conf
 # Section "InputClass"
 #         Identifier "libinput touchpad catchall"
@@ -19,8 +23,6 @@ sudo pacman -Syu --noconfirm --needed \
 #         Driver "libinput"
 #         Option "NaturalScrolling" "True"
 # EndSection
-
-yay -S slack-desktop
 
 # fetch correct time
 sudo ntpdate ntp.metas.ch
