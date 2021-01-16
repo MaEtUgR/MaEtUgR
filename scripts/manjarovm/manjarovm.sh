@@ -4,16 +4,16 @@
 sudo su -c "echo $USER ALL=\(ALL\) NOPASSWD: ALL > /etc/sudoers.d/zz-$USER"
 
 # configure gnome
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.3 # scale everything
-gsettings set org.gnome.desktop.interface enable-animations false # disable animations
+#gsettings set org.gnome.desktop.interface text-scaling-factor 1.3 # scale everything
+#gsettings set org.gnome.desktop.interface enable-animations false # disable animations
 # dash-to-dock
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM # bottom bar
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 45 # big bar
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false # remove trash
-gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true # app launcher first icon
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed true # don't autohide
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM # bottom bar
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height true # extend to screen edge
-gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true # show dock on all screens
+#gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 45 # big bar
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true # app launcher first icon
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false # remove trash
+#gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true # show dock on all screens
 # stand-by settings
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
@@ -32,8 +32,6 @@ sudo pacman -S --noconfirm --needed \
 	imwheel \
 	seahorse \
 	;
-
-sudo pacman -R firefox
 
 # fix mouse wheel scrolling
 cat <<EOF | install -D /dev/stdin ~/.config/autostart/imwheel.desktop
