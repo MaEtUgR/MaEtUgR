@@ -1,8 +1,9 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
-    "editor.autoClosingBrackets": "never",
     "files.trimTrailingWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.renderWhitespace": "boundary",
-    "diffEditor.ignoreTrimWhitespace": false
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.autoClosingBrackets": "never"
 }
