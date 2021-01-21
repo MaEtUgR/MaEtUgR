@@ -3,6 +3,9 @@
 # disable password prompt for sudo
 sudo su -c "echo $USER ALL=\(ALL\) NOPASSWD: ALL > /etc/sudoers.d/zz-$USER"
 
+# configure gnome display manager to automatically log in
+sudo sed -i '/AutomaticLoginEnable=/c\AutomaticLoginEnable=True\nAutomaticLogin='$USER /etc/gdm/custom.conf
+
 # configure gnome
 #gsettings set org.gnome.desktop.interface text-scaling-factor 1.3 # scale everything
 #gsettings set org.gnome.desktop.interface enable-animations false # disable animations
