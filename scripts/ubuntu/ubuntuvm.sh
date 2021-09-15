@@ -29,6 +29,9 @@ gsettings set org.gnome.desktop.interface clock-show-weekday false
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 
+# Ubuntu desktop
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+
 # gnome shell extensions
 sudo wget -O /usr/local/bin/gnomeshell-extension-manage "https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/ubuntugnome/gnomeshell-extension-manage"
 sudo chmod +x /usr/local/bin/gnomeshell-extension-manage
