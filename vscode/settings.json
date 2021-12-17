@@ -1,6 +1,7 @@
 {
     "workbench.startupEditor": "none",
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.renderWhitespace": "boundary",
     "editor.fontFamily": "JetBrains Mono",
