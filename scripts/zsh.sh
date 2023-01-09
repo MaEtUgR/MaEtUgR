@@ -6,3 +6,4 @@ code ~/.zshrc
 # ZSH_THEME="agnoster"
 # plugins=(git zsh-autosuggestions)
 echo "source ~/.profile" >> ~/.zprofile
+sudo apt install fonts-powerline # on Ubuntu to get proper agnoster characters
