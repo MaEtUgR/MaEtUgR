@@ -6,7 +6,6 @@ iwctl # Configure Wifi
     station wlan0 connect <3
     station wlan0 show
 ping 8.8.8.8 # Check internet
-ping google.com # Check DNS
 timedatectl # Set time zone
     timedatectl set-timezone Europe/Zurich
 lsblk # Prepare boot and system partition
@@ -42,3 +41,11 @@ sudo pacman -S efibootmgr
 cp /etc/systemd/netowrk/* /mnt/etc/systemd/network/ # copy over network config from install medium
 umount -R /mnt
 reboot
+
+# Boot into installed system
+systemctl enable --now systemd-networkd # Start networking
+    systemctl enable --now systemd-resolved
+    pacman -S iwd # Wifi
+    systemctl enable --now iwd
+    ping 8.8.8.8 # Check internet
+    ping google.com # Check DNS
