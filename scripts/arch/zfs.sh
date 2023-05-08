@@ -17,6 +17,12 @@ Server = https://zxcvfdsa.com/archzfs/$repo/$arch
 Server = http://kernels.archzfs.com/$repo/
 # -----------------------
 
+# Add archzfs gpg key and sign it as trustworthy
+wget https://archzfs.com/archzfs.gpg
+sudo pacman-key -a archzfs.gpg
+sudo pacman-key --lsign-key DDF7DB817396A49B2A2723F7403BD972F75D9D76
+rm archzfs.gpg
+
 # Update and install zfs for Arch, this might downgrade the kernel to a compatible version
 pacman -Syu
 sudo pacman -S archzfs-linux
