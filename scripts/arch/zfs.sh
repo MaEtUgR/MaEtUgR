@@ -47,3 +47,7 @@ sudo zpool create -f -o ashift=12 -m /mnt/hdpool hdpool raidz ata-WDC_WD60EFRX-6
 # Automatically mount pool on boot
 sudo systemctl enable --now zfs-import-cache
 sudo systemctl enable --now zfs-mount
+
+# Configure 20 min spin down time for harddisks after idling
+# http://howtoeverything.net/linux/hardware/list-timeout-values-hdparm-s
+sudo hdparm -S 240 /dev/sda /dev/sdb /dev/sdd /dev/sde
