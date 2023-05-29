@@ -1,5 +1,5 @@
 kate /etc/pacman.conf
-# add the following lines
+# add the following lines ABOVE the existing arch repositories (otherwise dependency issues show up)
 # -----------------------
 [archzfs]
 # Origin Server - France
