@@ -4,5 +4,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 code ~/.zshrc
 # ZSH_THEME="agnoster"
 # plugins=(git zsh-autosuggestions)
-echo "source ~/.profile" >> ~/.zprofile
+echo "source ~/.profile" >> ~/.zshrc
 sudo apt install fonts-powerline # on Ubuntu to get proper agnoster characters
