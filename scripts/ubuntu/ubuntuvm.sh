@@ -21,6 +21,7 @@ sudo sed -i '/#  AutomaticLogin = user1/c\AutomaticLogin = '$USER /etc/gdm3/cust
 
 # configure gnome
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true # Show Apps button on the left
 gsettings set org.gnome.desktop.background show-desktop-icons true
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
 gsettings set org.gnome.desktop.session idle-delay 0
