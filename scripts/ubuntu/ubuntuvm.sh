@@ -34,6 +34,12 @@ gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 
 # gnome shell extensions
+sudo apt install gnome-shell-extension-manager # install GUI Manager
+# Open by [Win] and seraching for "Extension Manager"
+# Install "Grand Theft Focus"
+# Install "Hide Universal Access"
+
+# old
 sudo wget -O /usr/local/bin/gnomeshell-extension-manage "https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/ubuntugnome/gnomeshell-extension-manage"
 sudo chmod +x /usr/local/bin/gnomeshell-extension-manage
 # install dash to panel (https://extensions.gnome.org/extension/1160/dash-to-panel/)
