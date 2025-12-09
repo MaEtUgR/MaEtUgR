@@ -5,4 +5,5 @@ code ~/.zshrc
 # ZSH_THEME="agnoster"
 # plugins=(git zsh-autosuggestions)
 echo "source ~/.profile" >> ~/.zshrc
+echo "PATH=$(echo "$PATH" | tr ':' '\n' | grep -v '^/mnt/c/' | paste -sd :)" >> ~/.zshrc # WSL remove Windows binary paths
 sudo apt install fonts-powerline # on Ubuntu to get proper agnoster characters
