@@ -6,5 +6,6 @@
     "editor.renderWhitespace": "boundary",
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-    "editor.autoClosingBrackets": "never"
+    "editor.autoClosingBrackets": "never",
+    "terminal.integrated.suggest.enabled": false
 }
