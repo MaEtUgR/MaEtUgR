@@ -20,3 +20,14 @@ grub-install --recheck
 
 cat /boot/grub/grub.cfg | grep menuentry # check for the entries you have after automatic grub repair, Linux and Windows there?
 # If it's all verified reboot
+
+# Other mounting method depending on encryption style:
+sudo cryptsetup luksOpen /dev/nvme0n1p3 encrypted
+sudo vgdisplay
+sudo vgchange -ay
+ls /dev/mapper/
+sudo mount /dev/mapper/ubuntu--vg-ubuntu--lv /mnt
+sudo mount -t proc /proc /mnt/proc
+sudo mount -o bind /sys /mnt/sys
+sudo mount -o bind /run /mnt/run
+sudo mount --rbind /dev/ /mnt/dev/
